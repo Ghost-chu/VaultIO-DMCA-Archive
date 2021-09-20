@@ -1,0 +1,17 @@
+name: VaultIO
+version: ${project.version}
+main: me.hsgamer.vaultio.VaultIO
+api-version: 1.13
+depend: [ Vault ]
+authors: [ HSGamer ]
+commands:
+  vaulti:
+    description: Import from file
+    usage: /vaulti
+  vaulto:
+    description: Output to file
+    usage: /vaulto
+permissions:
+  vaultio.do:
+    description: Allows a player to use this plugin
+    default: op
