@@ -10,11 +10,7 @@ import java.util.UUID;
 public class VaultProvider {
     private Economy vault;
 
-    public VaultProvider() {
-        setupEconomy();
-    }
-
-    private void setupEconomy() {
+    public void setupEconomy() {
         RegisteredServiceProvider<Economy> economyProvider = Bukkit.getServicesManager().getRegistration(Economy.class);
         if (economyProvider != null)
             this.vault = economyProvider.getProvider();
